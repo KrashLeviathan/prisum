@@ -21,3 +21,10 @@ def index():
     Serves up the index page.
     """
     return render_template('index.html')
+
+@app.route('/leaders')
+def leaders():
+    """
+    Serves up the index page.
+    """
+    return render_template('leaders.html')

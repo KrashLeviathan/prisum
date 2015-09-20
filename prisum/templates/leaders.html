@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% block title %}Team Leaders{% endblock %}
+{% block content %}
+<div class="container">
+    <h1>Team Leaders</h1>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="member-profile">
+                <button type="button" data-toggle="modal" data-target="#leaderModal">
+                <img src="{{ url_for('static', filename='img/leaders/Zach_N.png') }}">
+                    </button>
+                <h2>Zach N.</h2>
+                <p>Project Director</p>
+                <div id="leader-modal">
+                    {% include "leader_modal.html" %}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="member-profile">
+                <img src="{{ url_for('static', filename='img/leaders/Jacob_H.png') }}">
+
+                <h2>Jacob H.</h2>
+
+                <p>Assistant Project Director</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="member-profile">
+                <img src="{{ url_for('static', filename='img/leaders/Rachel_H.png') }}">
+
+                <h2>Rachel H.</h2>
+
+                <p>Treasurer</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="member-profile">
+                <img src="{{ url_for('static', filename='img/leaders/David_B.png') }}">
+
+                <h2>David B.</h2>
+
+                <p>Business Director</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="member-profile">
+                <img src="{{ url_for('static', filename='img/leaders/Rachel_P.jpg') }}">
+
+                <h2>Rachel P.</h2>
+
+                <p>Assistant Business Director</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="member-profile">
+                <img src="{{ url_for('static', filename='img/leaders/Matt_G.jpg') }}">
+
+                <h2>Matthew G.</h2>
+
+                <p>Mechanical Director</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="member-profile">
+                <img src="{{ url_for('static', filename='img/leaders/Jeremy_R.jpg') }}">
+
+                <h2>Jeremy R.</h2>
+
+                <p>Assistant Mechanical Director</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="member-profile">
+                <img src="{{ url_for('static', filename='img/leaders/Joe_T.png') }}">
+
+                <h2>Joe T.</h2>
+
+                <p>Electrical Director</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="member-profile">
+                <img src="{{ url_for('static', filename='img/leaders/Garrett_L.png') }}">
+
+                <h2>Garrett L.</h2>
+
+                <p>Assistant Electrical Director</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
