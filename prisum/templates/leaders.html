@@ -7,12 +7,7 @@
     <div class="row">
         <div class="col-md-4">
             <div class="member-profile">
-                <button type="button" data-toggle="modal" data-target="#leaderModal">
-                <img src="{{ url_for('static', filename='img/leaders/Zach_N.png') }}">
-                    </button>
-                <h2>Zach N.</h2>
-                <p>Project Director</p>
-                <div id="leader-modal">
+                <div id="leader-profile">
                     {% include "leader_modal.html" %}
                 </div>
             </div>
